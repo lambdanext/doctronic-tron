@@ -94,7 +94,7 @@
    pos, irrespective of whether these positions are valid o
    free."
   [pos]
-  {:post [(every? are-neighbours? %)]}
+  {:post [(every? (partial are-neighbours? pos) %)]}
   :TODO)
 
 (defn valid-neighbours
