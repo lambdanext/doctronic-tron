@@ -21,8 +21,8 @@
 (defn buzz
   "To infinity and beyond!"
   [look state]
-  (let [[x y] (get state :pos))]
-    {:pos [(inc x) y]})
+  (let [[x y] (get state :pos)]
+    {:pos [(inc x) y]}))
 
 (defn right
   [[x y]]
